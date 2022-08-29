@@ -7,6 +7,10 @@
     {
       "id": "Cadastro Day Off",
       "isDefault": false
+    },
+    {
+      "id": "Listagem de Colaboradores",
+      "isDefault": false
     }
   ],
   "viewMode": false,

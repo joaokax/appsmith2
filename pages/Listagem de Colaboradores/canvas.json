@@ -1,0 +1,43 @@
+{
+  "unpublishedPage": {
+    "name": "Listagem de Colaboradores",
+    "slug": "listagem-de-colaboradores",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 550,
+          "containerStyle": "none",
+          "snapRows": 55,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 60,
+          "minHeight": 560,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": []
+        },
+        "layoutOnLoadActions": [],
+        "validOnPageLoadActions": true,
+        "id": "Listagem de Colaboradores",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "630d2361436de013c616dfb7_630d2440436de013c616dfc2"
+}
