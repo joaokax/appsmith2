@@ -11,6 +11,10 @@
     {
       "id": "Listagem de Colaboradores",
       "isDefault": false
+    },
+    {
+      "id": "Cadastro de Colaboradores",
+      "isDefault": false
     }
   ],
   "viewMode": false,
