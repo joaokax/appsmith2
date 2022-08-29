@@ -3,6 +3,10 @@
     {
       "id": "Page1",
       "isDefault": true
+    },
+    {
+      "id": "Cadastro Day Off",
+      "isDefault": false
     }
   ],
   "viewMode": false,
