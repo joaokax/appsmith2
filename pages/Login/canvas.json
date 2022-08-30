@@ -712,7 +712,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "JS",
               "jsonPathKeys": [
-                "async () => {\n  if (!appsmith.store['token']) {\n    navigateTo('Login');\n  }\n}"
+                "async () => {\n  if (!appsmith.store.token) {\n    navigateTo('Login');\n  }\n}"
               ],
               "timeoutInMillisecond": 10000
             }
