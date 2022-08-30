@@ -78,63 +78,7 @@
                   "children": [
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input1CopyCopyCopyCopyCopyCopyCopyCopyCopyCopyCopy",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 66,
-                      "bottomRow": 70,
-                      "parentRowSpace": 10,
-                      "labelWidth": "13",
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "maxNum": "8",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 6.53125,
-                      "dynamicTriggerPathList": [],
-                      "resetOnSubmit": true,
-                      "leftColumn": 0,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "maxChars": "11",
-                      "isDisabled": false,
-                      "key": "qmsqy3vjiu",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 48,
-                      "widgetId": "7ot65tkiei",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "label": "Estado Civil",
-                      "version": 2,
-                      "parentId": "509vifl4xa",
-                      "minNum": "1",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "iconAlign": "left",
-                      "defaultText": ""
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "Input1CopyCopyCopyCopyCopyCopyCopyCopyCopyCopy",
+                      "widgetName": "numeroCadastro",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -190,7 +134,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input1CopyCopyCopyCopyCopyCopyCopyCopyCopy",
+                      "widgetName": "ufCadastro",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -302,7 +246,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input1CopyCopyCopyCopyCopyCopyCopy",
+                      "widgetName": "bairroCadastro",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -358,7 +302,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input1CopyCopyCopyCopyCopyCopy",
+                      "widgetName": "logadouroCadastro",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -414,7 +358,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input1CopyCopyCopyCopyCopy",
+                      "widgetName": "cepCadastro",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -470,7 +414,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input1CopyCopyCopyCopy",
+                      "widgetName": "cpfCadastro",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -524,7 +468,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input1CopyCopyCopy",
+                      "widgetName": "senhaCadastro",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -578,7 +522,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input1CopyCopy",
+                      "widgetName": "emailCadastro",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -632,7 +576,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Input1Copy",
+                      "widgetName": "sobrenomeCadastro",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -832,7 +776,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "DatePicker1",
+                      "widgetName": "dataCadastro",
                       "minDate": "1920-12-31T18:30:00.000Z",
                       "dateFormat": "YYYY-MM-DD HH:mm",
                       "displayName": "DatePicker",
@@ -916,7 +860,7 @@
                       "key": "fh0h2p04ha",
                       "isDeprecated": false,
                       "rightColumn": 23,
-                      "onChange": "{{SwitchNome.temFilho()}}",
+                      "onChange": "",
                       "widgetId": "p9ke3l9hfk",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
@@ -1040,6 +984,55 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "iconAlign": "left",
                       "defaultText": ""
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "estadocivilCadastro",
+                      "isFilterable": true,
+                      "displayName": "Select",
+                      "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                      "labelText": "Estado Civil",
+                      "searchTags": [
+                        "dropdown"
+                      ],
+                      "topRow": 66,
+                      "bottomRow": 70,
+                      "parentRowSpace": 10,
+                      "labelWidth": "13",
+                      "type": "SELECT_WIDGET",
+                      "serverSideFiltering": false,
+                      "hideCard": false,
+                      "defaultOptionValue": "",
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.53125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "options": "[\n  {\n    \"label\": \"Solteiro\",\n    \"value\": \"solteiro\"\n  },\n  {\n    \"label\": \"Casado\",\n    \"value\": \"casado\"\n  },\n  {\n    \"label\": \"Viúvo\",\n    \"value\": \"viúvo\"\n  },\n\t{\n    \"label\": \"Divorciado\",\n    \"value\": \"divorciado\"\n  },\n\t{\n    \"label\": \"União Estável\",\n    \"value\": \"união estável\"\n  }\n]",
+                      "placeholderText": "Select option",
+                      "isDisabled": false,
+                      "key": "jnn203lyd4",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 48,
+                      "widgetId": "4mtderlcdk",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "509vifl4xa",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                     }
                   ],
                   "key": "hj7ixvf3a5",
