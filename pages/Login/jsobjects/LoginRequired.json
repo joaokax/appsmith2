@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "LoginRequired",
+    "pageId": "Login",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\n\tLoginRequired: async () => {\n\t\tif(!appsmith.store['token']){\n\t\t\tnavigateTo('Login')\n\t\t}\n\t}\n}",
+    "variables": []
+  },
+  "id": "Login_LoginRequired",
+  "deleted": false,
+  "gitSyncId": "630d24cbe2df435300786348_630e5db6273d6d6f0c07655d"
+}

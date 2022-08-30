@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Login",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyFun2: async () => {\n\t\n\t}\n}",
+    "variables": []
+  },
+  "id": "Login_JSObject1",
+  "deleted": false,
+  "gitSyncId": "630d24cbe2df435300786348_630e5f9b273d6d6f0c076564"
+}

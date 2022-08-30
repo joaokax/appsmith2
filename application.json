@@ -22,6 +22,9 @@
   "unreadCommentThreads": 0,
   "color": "#E4D8CC",
   "icon": "shirt",
+  "unpublishedAppLayout": {
+    "type": "MOBILE"
+  },
   "evaluationVersion": 2,
   "applicationVersion": 2,
   "isManualUpdate": false,
