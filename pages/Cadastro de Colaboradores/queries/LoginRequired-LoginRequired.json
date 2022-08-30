@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  if (!appsmith.store['token']) {\n    navigateTo('Login');\n  }\n}",
+      "body": "async () => {\n  if (!appsmith.store.token) {\n    navigateTo('Login');\n  }\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  if (!appsmith.store['token']) {\n    navigateTo('Login');\n  }\n}"
+      "async () => {\n  if (!appsmith.store.token) {\n    navigateTo('Login');\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
