@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "LoginRequired",
+    "pageId": "Cadastro Day Off",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\n\tLoginRequired: async () => {\n\t\tif(!appsmith.store['token']){\n\t\t\tnavigateTo('Login')\n\t\t}\n\t}\n}",
+    "variables": []
+  },
+  "id": "Cadastro Day Off_LoginRequired",
+  "deleted": false,
+  "gitSyncId": "630d24cbe2df435300786348_630e6546273d6d6f0c07656f"
+}

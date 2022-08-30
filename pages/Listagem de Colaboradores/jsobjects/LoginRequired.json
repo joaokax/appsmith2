@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "LoginRequired",
+    "pageId": "Listagem de Colaboradores",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\n\tLoginRequired: async () => {\n\t\tif(!appsmith.store['token']){\n\t\t\tnavigateTo('Login')\n\t\t}\n\t}\n}",
+    "variables": []
+  },
+  "id": "Listagem de Colaboradores_LoginRequired",
+  "deleted": false,
+  "gitSyncId": "630d24cbe2df435300786348_630e654c273d6d6f0c076573"
+}
