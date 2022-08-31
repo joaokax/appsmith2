@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getCep",
-    "fullyQualifiedName": "cepResult.getCep",
+    "name": "cadastro",
+    "fullyQualifiedName": "cadastroCadastro.cadastro",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,12 +14,12 @@
       "userPermissions": []
     },
     "pageId": "Cadastro de Colaboradores",
-    "collectionId": "Cadastro de Colaboradores_cepResult",
+    "collectionId": "Cadastro de Colaboradores_cadastroCadastro",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  consultaCep.run(() => {});\n}",
+      "body": "() => {\n  {\n    {\n      CadastroUsuario.run(() => {\n        (showAlert('Cadastrado com Sucesso', 'success'), resetWidget(\"containerCadastroColaborador\", true));\n      }, () => showAlert('Erro ao cadastrar', 'error'));\n    }\n  }\n}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  consultaCep.run(() => {});\n}"
+      "() => {\n  {\n    {\n      CadastroUsuario.run(() => {\n        (showAlert('Cadastrado com Sucesso', 'success'), resetWidget(\"containerCadastroColaborador\", true));\n      }, () => showAlert('Erro ao cadastrar', 'error'));\n    }\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Cadastro de Colaboradores_cepResult.getCep",
+  "id": "Cadastro de Colaboradores_cadastroCadastro.cadastro",
   "deleted": false,
-  "gitSyncId": "630d24cbe2df435300786348_630fa3caa5ff0b29560bfdcf"
+  "gitSyncId": "630d24cbe2df435300786348_630fe3a3a5ff0b29560bfdf1"
 }

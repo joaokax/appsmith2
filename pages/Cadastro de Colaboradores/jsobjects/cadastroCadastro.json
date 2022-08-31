@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "cadastroCadastro",
+    "pageId": "Cadastro de Colaboradores",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tcadastro: () => {\n\t\t{{CadastroUsuario.run(() => {\n\t\t\tshowAlert('Cadastrado com Sucesso', 'success'),\n\t\t\tresetWidget(\"containerCadastroColaborador\",true)\n\t\t}, () => showAlert('Erro ao cadastrar','error'))}}\n\t\n\t},\n}",
+    "variables": []
+  },
+  "id": "Cadastro de Colaboradores_cadastroCadastro",
+  "deleted": false,
+  "gitSyncId": "630d24cbe2df435300786348_630fe3a3a5ff0b29560bfdf4"
+}

@@ -27,7 +27,7 @@
           "children": [
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "Container1",
+              "widgetName": "containerCadastroColaborador",
               "borderColor": "transparent",
               "isCanvas": true,
               "displayName": "Container",
@@ -42,8 +42,10 @@
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
+              "shouldScrollContents": false,
               "animateLoading": true,
               "parentColumnSpace": 6.84375,
+              "dynamicTriggerPathList": [],
               "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
@@ -137,6 +139,7 @@
                       "widgetName": "ufCadastro",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "onSubmit": "{{storeValue(,'\"\"')}}",
                       "searchTags": [
                         "form",
                         "text input",
@@ -153,7 +156,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 6.53125,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
                       "resetOnSubmit": true,
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
@@ -189,13 +196,14 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "iconAlign": "left",
-                      "defaultText": "{{appsmith.store.uf}}"
+                      "defaultText": "{{consultaCep.data.uf}}"
                     },
                     {
                       "boxShadow": "none",
                       "widgetName": "cidadeCadastro",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "onSubmit": "{{storeValue(,'\"\"')}}",
                       "searchTags": [
                         "form",
                         "text input",
@@ -212,7 +220,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 6.53125,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
                       "resetOnSubmit": true,
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
@@ -248,13 +260,14 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "iconAlign": "left",
-                      "defaultText": "{{appsmith.store.cidade}}"
+                      "defaultText": "{{consultaCep.data.localidade}}"
                     },
                     {
                       "boxShadow": "none",
                       "widgetName": "bairroCadastro",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "onSubmit": "{{storeValue('/','\"\"')}}",
                       "searchTags": [
                         "form",
                         "text input",
@@ -271,7 +284,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 6.53125,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
                       "resetOnSubmit": true,
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
@@ -307,13 +324,14 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "iconAlign": "left",
-                      "defaultText": "{{appsmith.store.bairro}}"
+                      "defaultText": "{{consultaCep.data.bairro}}"
                     },
                     {
                       "boxShadow": "none",
                       "widgetName": "logadouroCadastro",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "onSubmit": "",
                       "searchTags": [
                         "form",
                         "text input",
@@ -330,7 +348,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 6.53125,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        }
+                      ],
                       "resetOnSubmit": true,
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
@@ -366,7 +388,7 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "iconAlign": "left",
-                      "defaultText": "{{appsmith.store.logradouro}}"
+                      "defaultText": "{{consultaCep.data.logradouro}}"
                     },
                     {
                       "boxShadow": "none",
@@ -655,8 +677,9 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "submitCadastro",
-                      "onClick": "{{CadastroUsuario.run(() => showAlert('Cadastro com Sucesso','success'), () => showAlert(CadastroUsuario.data.error,'warning'))}}",
+                      "onClick": "{{cadastroCadastro.cadastro()}}",
                       "buttonColor": "#16a34a",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -1215,6 +1238,16 @@
               "pluginType": "JS",
               "jsonPathKeys": [
                 "async () => {\n  if (!appsmith.store.token) {\n    navigateTo('Login');\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Cadastro de Colaboradores_consultaCep",
+              "name": "consultaCep",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "cepCadastro.text"
               ],
               "timeoutInMillisecond": 10000
             }

@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "getCep",
-    "fullyQualifiedName": "cepResult.getCep",
+    "name": "myFun2",
+    "fullyQualifiedName": "JSObject1.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,12 +14,12 @@
       "userPermissions": []
     },
     "pageId": "Cadastro de Colaboradores",
-    "collectionId": "Cadastro de Colaboradores_cepResult",
+    "collectionId": "Cadastro de Colaboradores_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  consultaCep.run(() => {});\n}",
+      "body": "async () => {}",
       "jsArguments": [],
       "isAsync": true
     },
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  consultaCep.run(() => {});\n}"
+      "async () => {}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Cadastro de Colaboradores_cepResult.getCep",
+  "id": "Cadastro de Colaboradores_JSObject1.myFun2",
   "deleted": false,
-  "gitSyncId": "630d24cbe2df435300786348_630fa3caa5ff0b29560bfdcf"
+  "gitSyncId": "630d24cbe2df435300786348_630fe22fa5ff0b29560bfdea"
 }
