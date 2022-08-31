@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "url_s3",
+    "pageId": "Cadastro Day Off",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n    upload: () => {\n         upload.run(() => {\n\t\t\t\t\t storeValue(\"signedURL\", upload.data.signedUrl.split('?')[0]);\n\t\t\t\t\t add_event.run()\n\t\t\t\t}, () => {\n\n\t\t\t\t})\n    }\n}\n",
+    "variables": []
+  },
+  "id": "Cadastro Day Off_url_s3",
+  "deleted": false,
+  "gitSyncId": "630d2361436de013c616dfb7_630f547140680c6837a949f2"
+}

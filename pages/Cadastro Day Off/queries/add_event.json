@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO events\n  (user_id, type, date, start_time, end_time, warned_peers, warned_team, warned_leader, pending_task, defined_substitute, substitute, document)\nVALUES\n  (\n\t\t{{ 1 }},\n    {{ type_day_off.selectedOptionValue }},\n\t\t{{ calendar.selectedDate }},\n\t\t{{ start_time.selectedDate.slice(11, 19) }},\n\t\t{{ end_time.selectedDate.slice(11, 19) }},\n\t\t{{ check_c1.isChecked }},\n\t\t{{ check_c2.isChecked }},\n\t\t{{ check_c3.isChecked }},\n\t\t{{ check_c4.isChecked }},\n\t\t{{ check_substitute.isChecked }},\n\t\t{{ input_substitute.text }},\n\t\t{{ upload_files.files }}\n  );",
+      "body": "INSERT INTO events\n  (user_id, type, date, start_time, end_time, warned_peers, warned_team, warned_leader, pending_task, defined_substitute, substitute, document)\nVALUES\n  (\n\t\t{{ 1 }},\n    {{ type_day_off.selectedOptionValue }},\n\t\t{{ calendar.selectedDate }},\n\t\t{{ start_time.selectedDate.slice(11, 19) }},\n\t\t{{ end_time.selectedDate.slice(11, 19) }},\n\t\t{{ check_c1.isChecked }},\n\t\t{{ check_c2.isChecked }},\n\t\t{{ check_c3.isChecked }},\n\t\t{{ check_c4.isChecked }},\n\t\t{{ check_substitute.isChecked }},\n\t\t{{ input_substitute.text }},\n\t\t{{ appsmith.store.signedURL }}\n  );",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -36,6 +36,7 @@
     "messages": [],
     "jsonPathKeys": [
       "1",
+      "appsmith.store.signedURL",
       "calendar.selectedDate",
       "check_c1.isChecked",
       "check_c2.isChecked",
@@ -45,8 +46,7 @@
       "end_time.selectedDate.slice(11, 19)",
       "input_substitute.text",
       "start_time.selectedDate.slice(11, 19)",
-      "type_day_off.selectedOptionValue",
-      "upload_files.files"
+      "type_day_off.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
