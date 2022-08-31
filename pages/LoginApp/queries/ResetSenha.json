@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "login_api",
+    "name": "ResetSenha",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -17,11 +17,11 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Login",
+    "pageId": "LoginApp",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/",
+      "path": "/reset-email",
       "headers": [
         {
           "key": "content-type",
@@ -30,7 +30,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"email\": {{emailLogin.text}},\n\t\"password\": \"{{passLogin.text}}\"\n}",
+      "body": "{\n\t\"email\": {{emailReset.text}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
@@ -52,15 +52,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "emailLogin.text",
-      "passLogin.text"
+      "emailReset.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Login_login_api",
+  "id": "LoginApp_ResetSenha",
   "deleted": false,
-  "gitSyncId": "630d24cbe2df435300786348_630e572c273d6d6f0c07654d"
+  "gitSyncId": "630d24cbe2df435300786348_630e5fd4273d6d6f0c076566"
 }

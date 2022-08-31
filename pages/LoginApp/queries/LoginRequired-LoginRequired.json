@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Login",
-    "collectionId": "Login_LoginRequired",
+    "pageId": "LoginApp",
+    "collectionId": "LoginApp_LoginRequired",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -41,7 +41,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Login_LoginRequired.LoginRequired",
+  "id": "LoginApp_LoginRequired.LoginRequired",
   "deleted": false,
   "gitSyncId": "630d24cbe2df435300786348_630e5db6273d6d6f0c076559"
 }

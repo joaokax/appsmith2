@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Login",
-    "slug": "login",
+    "name": "LoginApp",
+    "slug": "loginapp",
     "layouts": [
       {
         "viewMode": false,
@@ -657,9 +657,9 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Login_LoginRequired.LoginRequired",
+              "id": "LoginApp_LoginRequired.LoginRequired",
               "name": "LoginRequired.LoginRequired",
-              "collectionId": "Login_LoginRequired",
+              "collectionId": "LoginApp_LoginRequired",
               "clientSideExecution": true,
               "confirmBeforeExecute": false,
               "pluginType": "JS",
@@ -671,7 +671,7 @@
           ]
         ],
         "validOnPageLoadActions": true,
-        "id": "Login",
+        "id": "LoginApp",
         "deleted": false,
         "policies": [],
         "userPermissions": []

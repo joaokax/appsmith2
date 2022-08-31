@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
     "name": "CheckLogin",
-    "pageId": "Login",
+    "pageId": "LoginApp",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -9,7 +9,7 @@
     "body": "export default {\nlogin: () =>\nlogin_api.run(() => {\n         const jwt = login_api?.data?.access_token;\n\n          if(jwt){\n               storeValue('token', jwt);\n               navigateTo('Listagem de Colaboradores', {});\n          }else{\n               showAlert(login_api.data.message);\n            }\n        }\n    )\n}",
     "variables": []
   },
-  "id": "Login_CheckLogin",
+  "id": "LoginApp_CheckLogin",
   "deleted": false,
   "gitSyncId": "630d24cbe2df435300786348_630e581b273d6d6f0c076553"
 }

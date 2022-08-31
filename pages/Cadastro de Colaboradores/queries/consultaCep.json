@@ -2,13 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "CadastroUsuario",
+    "name": "consultaCep",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "sshProxyEnabled": false,
-        "url": "https://api-smith-simbiose.herokuapp.com"
+        "url": "viacep.com.br/ws/{{cepCadastro.text}}/json/"
       },
       "invalids": [],
       "messages": [],
@@ -17,53 +16,42 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Login",
+    "pageId": "Cadastro de Colaboradores",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/create_user",
-      "headers": [
-        {
-          "key": "content-type",
-          "value": "application/json"
-        }
-      ],
+      "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n    \"first_name\": \"{{NomeCadastro.text}}\",\n    \"email\": \"{{EmailCadastro.text}}\",\n    \"password\": \"{{SenhaCadastro.text}}\",\n    \"last_name\": \"{{SobrenomeCadastro.text}}\",\n\t\t\"cpf\": \"{{CPFCadastro.text}}\"\n\n}",
       "bodyFormData": [],
-      "httpMethod": "POST",
+      "httpMethod": "GET",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
       "formData": {
-        "apiContentType": "application/json"
+        "apiContentType": "none"
       }
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "body"
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "CPFCadastro.text",
-      "EmailCadastro.text",
-      "NomeCadastro.text",
-      "SenhaCadastro.text",
-      "SobrenomeCadastro.text"
+      "cepCadastro.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Login_CadastroUsuario",
+  "id": "Cadastro de Colaboradores_consultaCep",
   "deleted": false,
-  "gitSyncId": "630d24cbe2df435300786348_630d3026e2df435300786353"
+  "gitSyncId": "630d24cbe2df435300786348_630fa3f8a5ff0b29560bfdd4"
 }

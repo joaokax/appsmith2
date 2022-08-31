@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Login",
-    "collectionId": "Login_CheckLogin",
+    "pageId": "LoginApp",
+    "collectionId": "LoginApp_CheckLogin",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -40,7 +40,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Login_CheckLogin.login",
+  "id": "LoginApp_CheckLogin.login",
   "deleted": false,
   "gitSyncId": "630d24cbe2df435300786348_630e5828273d6d6f0c076555"
 }
