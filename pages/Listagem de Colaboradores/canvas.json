@@ -377,6 +377,15 @@
                 },
                 {
                   "key": "primaryColumns.birthday.computedValue"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.menuButtonLabel"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.buttonLabel"
                 }
               ],
               "leftColumn": 0,
@@ -439,7 +448,8 @@
                 "marital_state",
                 "created_at",
                 "status",
-                "birthday"
+                "birthday",
+                "customColumn1"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -455,6 +465,9 @@
               "dynamicTriggerPathList": [
                 {
                   "key": "onRowSelected"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.onClick"
                 }
               ],
               "primaryColumns": {
@@ -933,6 +946,41 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{table_collab.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"birthday\"]))}}"
+                },
+                "customColumn1": {
+                  "allowCellWrapping": false,
+                  "index": 10,
+                  "width": 150,
+                  "originalId": "customColumn1",
+                  "id": "customColumn1",
+                  "alias": "customColumn1",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "button",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "delete",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF",
+                  "customAlias": "",
+                  "iconName": "delete",
+                  "menuButtonLabel": "{{table_collab.processedTableData.map((currentRow, currentIndex) => ( 'Open Menu'))}}",
+                  "buttonColor": "{{table_collab.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                  "buttonLabel": "{{table_collab.processedTableData.map((currentRow, currentIndex) => ( 'Deletar'))}}",
+                  "buttonVariant": "SECONDARY",
+                  "borderRadius": "0.375rem",
+                  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+                  "onClick": "{{delete_users.run(() => showAlert('Colaborador foi deletado','success'), () => showAlert('Houve um problema ao deletar','error'))}}"
                 }
               },
               "onRowSelected": "",
