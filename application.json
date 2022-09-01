@@ -23,7 +23,7 @@
   "color": "#E4D8CC",
   "icon": "shirt",
   "unpublishedAppLayout": {
-    "type": "MOBILE"
+    "type": "FLUID"
   },
   "publishedAppLayout": {
     "type": "MOBILE"

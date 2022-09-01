@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1190,
+          "bottomRow": 1200,
           "containerStyle": "none",
           "snapRows": 55,
           "parentRowSpace": 1,
@@ -25,6 +25,81 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
+            {
+              "isCompact": false,
+              "boxShadow": "none",
+              "widgetName": "MenuButton1",
+              "displayName": "Menu Button",
+              "iconSVG": "/static/media/icon.0341d17d67020c8bfc560cc5928af2a7.svg",
+              "topRow": 1,
+              "bottomRow": 5,
+              "parentRowSpace": 10,
+              "type": "MENU_BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 17.34375,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "menuItems.menuItem1.onClick"
+                },
+                {
+                  "key": "menuItems.menuItem2.onClick"
+                },
+                {
+                  "key": "menuItems.menuItem3.onClick"
+                }
+              ],
+              "leftColumn": 54,
+              "dynamicBindingPathList": [
+                {
+                  "key": "menuColor"
+                }
+              ],
+              "isDisabled": false,
+              "key": "gvacyc96fs",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "menuVariant": "PRIMARY",
+              "widgetId": "he47lqnxaa",
+              "menuItems": {
+                "menuItem1": {
+                  "label": "Listagem de Colaboradores",
+                  "id": "menuItem1",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 0,
+                  "onClick": "{{navigateTo('Listagem de Colaboradores', {})}}"
+                },
+                "menuItem2": {
+                  "label": "Cadastro Day Off",
+                  "id": "menuItem2",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 1,
+                  "onClick": "{{navigateTo('Cadastro Day Off', {})}}"
+                },
+                "menuItem3": {
+                  "label": "Cadastro de Colaboradores",
+                  "id": "menuItem3",
+                  "widgetId": "",
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "index": 2,
+                  "onClick": "{{navigateTo('Cadastro de Colaboradores', {})}}"
+                }
+              },
+              "isVisible": true,
+              "label": "Menu",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0.375rem",
+              "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+              "placement": "CENTER"
+            },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "widgetName": "head_collab_list",
@@ -151,7 +226,7 @@
               "key": "pwk7482m5x",
               "backgroundColor": "{{appsmith.theme.colors.primaryColor}}",
               "isDeprecated": false,
-              "rightColumn": 64,
+              "rightColumn": 53,
               "widgetId": "ef5o2jshzm",
               "containerStyle": "card",
               "isVisible": true,
@@ -173,8 +248,8 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 6,
-              "bottomRow": 32,
+              "topRow": 7,
+              "bottomRow": 33,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
@@ -270,7 +345,7 @@
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 32,
+              "topRow": 33,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -453,7 +528,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 67,
+              "bottomRow": 68,
               "columnWidthMap": {
                 "task": 245,
                 "step": 62,
@@ -1137,9 +1212,10 @@
                     },
                     "street": {
                       "children": {},
-                      "dataType": "null",
+                      "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.street))(json_form_user.sourceData, json_form_user.formData, json_form_user.fieldState)}}",
                       "fieldType": "Text Input",
+                      "sourceData": "Rua Desembargador Zepherino Lavenere Machado",
                       "isCustomField": false,
                       "accessor": "street",
                       "identifier": "street",
@@ -1154,14 +1230,14 @@
                       "isSpellCheck": false,
                       "isVisible": true,
                       "labelTextSize": "0.875rem",
-                      "label": "Street",
-                      "sourceData": "Rua Desembargador Zepherino Lavenere Machado"
+                      "label": "Street"
                     },
                     "number": {
                       "children": {},
-                      "dataType": "null",
+                      "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.number))(json_form_user.sourceData, json_form_user.formData, json_form_user.fieldState)}}",
                       "fieldType": "Text Input",
+                      "sourceData": "51",
                       "isCustomField": false,
                       "accessor": "number",
                       "identifier": "number",
@@ -1176,14 +1252,14 @@
                       "isSpellCheck": false,
                       "isVisible": true,
                       "labelTextSize": "0.875rem",
-                      "label": "Number",
-                      "sourceData": "51"
+                      "label": "Number"
                     },
                     "district": {
                       "children": {},
-                      "dataType": "null",
+                      "dataType": "string",
                       "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.district))(json_form_user.sourceData, json_form_user.formData, json_form_user.fieldState)}}",
                       "fieldType": "Text Input",
+                      "sourceData": "Tabuleiro do Martins",
                       "isCustomField": false,
                       "accessor": "district",
                       "identifier": "district",
@@ -1198,8 +1274,7 @@
                       "isSpellCheck": false,
                       "isVisible": true,
                       "labelTextSize": "0.875rem",
-                      "label": "District",
-                      "sourceData": "Tabuleiro do Martins"
+                      "label": "District"
                     },
                     "city": {
                       "children": {},
@@ -1488,8 +1563,8 @@
               "displayName": "JSON Form",
               "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
               "onSubmit": "{{update_users.run(() => {\nget_all_users.run(() => showAlert('Dados atualizados com sucesso','success'))\n}, () => {\n\tshowAlert('Houve um erro ao consultar o banco de dados','error')\n})}}",
-              "topRow": 67,
-              "bottomRow": 117,
+              "topRow": 68,
+              "bottomRow": 118,
               "fieldLimitExceeded": false,
               "parentRowSpace": 10,
               "title": "Dados de {{table_collab.selectedRow.first_name}}\n{{table_collab.selectedRow.last_name}}",
