@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "cepResult",
+    "pageId": "Cadastro de Colaboradores",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tgetCep: () => {\n\t\tconsultaCep.run(() => {\n\t\t}) \n\t},\n}",
+    "variables": []
+  },
+  "id": "Cadastro de Colaboradores_cepResult",
+  "deleted": false,
+  "gitSyncId": "630d24cbe2df435300786348_630fa3caa5ff0b29560bfdd2"
+}

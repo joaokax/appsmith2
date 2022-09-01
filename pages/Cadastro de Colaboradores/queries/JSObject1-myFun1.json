@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "login",
-    "fullyQualifiedName": "CheckLogin.login",
+    "name": "myFun1",
+    "fullyQualifiedName": "JSObject1.myFun1",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,17 +13,18 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Login",
-    "collectionId": "Login_CheckLogin",
+    "pageId": "Cadastro de Colaboradores",
+    "collectionId": "Cadastro de Colaboradores_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => login_api.run(() => {\n  const jwt = login_api?.data?.access_token;\n  if (jwt) {\n    storeValue('token', jwt);\n    navigateTo('Listagem de Colaboradores', {});\n  } else {\n    showAlert(login_api.data.message);\n  }\n})",
+      "body": "() => {}",
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
+    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -33,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => login_api.run(() => {\n  const jwt = login_api?.data?.access_token;\n  if (jwt) {\n    storeValue('token', jwt);\n    navigateTo('Listagem de Colaboradores', {});\n  } else {\n    showAlert(login_api.data.message);\n  }\n})"
+      "() => {}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Login_CheckLogin.login",
+  "id": "Cadastro de Colaboradores_JSObject1.myFun1",
   "deleted": false,
-  "gitSyncId": "630d24cbe2df435300786348_630e5828273d6d6f0c076555"
+  "gitSyncId": "630d24cbe2df435300786348_630fe22fa5ff0b29560bfdeb"
 }

@@ -1318,9 +1318,9 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "upload_files.files[0]",
                 "appsmith.user.name",
                 "moment()",
+                "upload_files.files[0]",
                 "upload_files.files[0][\"name\"]"
               ],
               "timeoutInMillisecond": 10000

@@ -2,13 +2,13 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "ResetSenha",
+    "name": "consultaCep",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
         "sshProxyEnabled": false,
-        "url": "https://api-smith-simbiose.herokuapp.com"
+        "url": "viacep.com.br/ws/{{cepCadastro.text}}/json/"
       },
       "invalids": [],
       "messages": [],
@@ -17,49 +17,42 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Login",
+    "pageId": "Cadastro de Colaboradores",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/reset-email",
-      "headers": [
-        {
-          "key": "content-type",
-          "value": "application/json"
-        }
-      ],
+      "headers": [],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"email\": {{emailReset.text}}\n}",
       "bodyFormData": [],
-      "httpMethod": "POST",
+      "httpMethod": "GET",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
       "formData": {
-        "apiContentType": "application/json"
+        "apiContentType": "none"
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [
       {
-        "key": "body"
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "emailReset.text"
+      "cepCadastro.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Login_ResetSenha",
+  "id": "Cadastro de Colaboradores_consultaCep",
   "deleted": false,
-  "gitSyncId": "630d24cbe2df435300786348_630e5fd4273d6d6f0c076566"
+  "gitSyncId": "630d24cbe2df435300786348_630fa3f8a5ff0b29560bfdd4"
 }

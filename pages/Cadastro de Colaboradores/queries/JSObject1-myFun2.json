@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "LoginRequired",
-    "fullyQualifiedName": "LoginRequired.LoginRequired",
+    "name": "myFun2",
+    "fullyQualifiedName": "JSObject1.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,16 +14,16 @@
       "userPermissions": []
     },
     "pageId": "Cadastro de Colaboradores",
-    "collectionId": "Cadastro de Colaboradores_LoginRequired",
+    "collectionId": "Cadastro de Colaboradores_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "async () => {\n  if (!appsmith.store.token) {\n    navigateTo('LoginApp');\n  }\n}",
+      "body": "async () => {}",
       "jsArguments": [],
       "isAsync": true
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "async () => {\n  if (!appsmith.store.token) {\n    navigateTo('LoginApp');\n  }\n}"
+      "async () => {}"
     ],
-    "userSetOnLoad": true,
+    "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Cadastro de Colaboradores_LoginRequired.LoginRequired",
+  "id": "Cadastro de Colaboradores_JSObject1.myFun2",
   "deleted": false,
-  "gitSyncId": "630d24cbe2df435300786348_630e6550273d6d6f0c076575"
+  "gitSyncId": "630d24cbe2df435300786348_630fe22fa5ff0b29560bfdea"
 }

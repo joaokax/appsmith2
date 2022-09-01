@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "CadastroUsuario",
+    "name": "login_api",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -17,11 +17,11 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Login",
+    "pageId": "LoginApp",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
-      "path": "/create_user",
+      "path": "/",
       "headers": [
         {
           "key": "content-type",
@@ -30,7 +30,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n    \"first_name\": \"{{NomeCadastro.text}}\",\n    \"email\": \"{{EmailCadastro.text}}\",\n    \"password\": \"{{SenhaCadastro.text}}\",\n    \"last_name\": \"{{SobrenomeCadastro.text}}\",\n\t\t\"cpf\": \"{{CPFCadastro.text}}\"\n\n}",
+      "body": "{\n\t\"email\": {{emailLogin.text}},\n\t\"password\": \"{{passLogin.text}}\"\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "pluginSpecifiedTemplates": [
@@ -52,18 +52,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "CPFCadastro.text",
-      "EmailCadastro.text",
-      "NomeCadastro.text",
-      "SenhaCadastro.text",
-      "SobrenomeCadastro.text"
+      "emailLogin.text",
+      "passLogin.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Login_CadastroUsuario",
+  "id": "LoginApp_login_api",
   "deleted": false,
-  "gitSyncId": "630d24cbe2df435300786348_630d3026e2df435300786353"
+  "gitSyncId": "630d24cbe2df435300786348_630e572c273d6d6f0c07654d"
 }
